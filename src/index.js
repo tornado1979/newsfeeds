@@ -13,15 +13,3 @@ render(
   <Root store={store} />,
   document.getElementById('root')
 )
-/*ReactDOM.render(
-  <Provider store={store}>
-  <Router>
-    <Route path="/" component={Home}/>
-    <Route path="/about" component={About}/>
-  </Router>
-  </Provider>,
-  document.getElementById('root')
-)
-registerServiceWorker();*/
-
-
