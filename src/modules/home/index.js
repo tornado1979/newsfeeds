@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import propTypes from 'prop-types'
-import moment from 'moment'
 
 import { 
     fetchNews,
@@ -89,7 +88,7 @@ class Home extends Component {
 
             return (<div className={className} key={idx}>
                         <div className="card">
-                            <img className="card-img-top" src={article.urlToImage} alt='news image'/>
+                            <img className="card-img-top" src={article.urlToImage} alt='news'/>
                             <div className="card-body">
                                 <p className="card-title">{article.title}</p>
                                 <p className="card-date">{articleDate.format('DD/MM/YYYY')} | <b>{article.source.name}</b></p>
@@ -108,7 +107,7 @@ class Home extends Component {
             let className = `my-content-${position}`
             return (<div className={className} key={idx}>
                   <div className="card">
-                    <img className="card-img-top" src={article.urlToImage} alt='news image'/>
+                    <img className="card-img-top" src={article.urlToImage} alt='news'/>
                     <div className="card-body">
                         <h5 className="card-title">{article.title}</h5>
                         <p className="card-date">{articleDate.format('DD/MM/YYYY')} | <b>{article.source.name}</b></p>
